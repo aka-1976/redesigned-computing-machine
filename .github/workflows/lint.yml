@@ -1,0 +1,19 @@
+name: "Clang-Tidy"
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  linting:
+    name: "Linting"
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install clang-tidy
+      run: sudo apt-get install -y clang-tidy
+    - name: Configure CMake
+      run: cmake -B build -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+    - name: Run clang-tidy
+      run: clang-tidy -p build $(find . -name "*.cpp" -o -name "*.h")
