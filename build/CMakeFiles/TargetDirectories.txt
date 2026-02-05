@@ -1,0 +1,4 @@
+C:/Users/aka1976mb/Documents/GitHub/redesigned-computing-machine/build/CMakeFiles/main.dir
+C:/Users/aka1976mb/Documents/GitHub/redesigned-computing-machine/build/CMakeFiles/RUN_TESTS.dir
+C:/Users/aka1976mb/Documents/GitHub/redesigned-computing-machine/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/aka1976mb/Documents/GitHub/redesigned-computing-machine/build/CMakeFiles/ZERO_CHECK.dir
